@@ -1,16 +1,58 @@
-* {
-
+:root 
+{
+    --bg-black-resin: #202030;
+    --bg-english-violet: #39304A;
+    --bg-cerulian-blue: #40798C;
+    --text-green-verdigris: #70A9A1;
+    --text-ash-gray: #CFD7C7;
 }
 
-body {
-    background-color: rgba(252, 243, 166, 0.329);
+body 
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; 
+    font-size: 16px;
 }
 
-p {
-    color: rgb(0, 0, 0);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-shadow: 2px 2px, 2px  black;
+.grid-container {
+    display: grid;
+    grid-template-columns: 270px auto;
+    grid-template-rows: 150px 100% 200px;
 }
+
+.header
+{
+    background-color: var(--bg-black-resin);
+    grid-column: 1 / 3;
+}
+
+.aside 
+{
+    background-color: var(--bg-english-violet);
+    width: 270px;
+    height: 100%;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+
+.main-container
+{
+    background-color: var(white);
+    grid-column: 2;
+    grid-row: 2;
+    align-items: center;
+}
+
+.footer 
+{
+    background-color: var(--bg-black-resin);
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
 
 /* To add style to a class, write .classname*/
 .impact-text {
@@ -38,8 +80,3 @@ h1 {
     height: 100%;
     border-radius: 10px;
 }
-
-#front-image-div {
-    
-}
-
