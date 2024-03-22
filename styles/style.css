@@ -1,0 +1,110 @@
+/* || Color Scheme */
+
+:root 
+{
+    --bg-black-resin: #202030;
+    --bg-english-violet: #39304A;
+    --bg-cerulian-blue: #40798C;
+    --text-green-verdigris: #70A9A1;
+    --text-ash-gray: #CFD7C7;
+}
+
+/* || GENERAL STYLES */
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; 
+    font-size: 16px;
+  }
+
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  ul {
+    list-style-type: circle;
+  }
+
+  /* || Header and Main Navigation */
+
+header
+{
+    background-color: var(--bg-black-resin);
+    width: 100%;
+    height: 120px;
+    position: fixed;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-rows: auto auto;
+}
+
+aside
+{
+    background-color: var(--text-green-verdigris);
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 120px;
+}
+
+.navigation {
+    padding: 10%;
+    border: #70A9A1;
+    border-radius: 15%;
+    margin: 10%;
+    margin-top: 20%;
+    background-color: var(--text-ash-gray);
+}
+
+.nav-list {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-list:hover {
+    font-style: italic;
+}
+
+.aside-right {
+    background-color:azure;
+    align-items: right;
+    grid-column: 3;
+    grid-row: 1;
+    padding-top: 120px;
+}
+
+main
+{
+    background-color: var(white);
+    grid-column: 2;
+    grid-row: 1;
+    min-height: 600px;
+    padding-top: 120px;
+    align-items: right;
+}
+
+footer 
+{
+    background-color: var(--bg-black-resin);
+    grid-column: 1 / 4;
+    grid-row: 2;
+    width: 100%;
+    height: auto;
+    align-items: center;
+}
+
+.banner {
+    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+

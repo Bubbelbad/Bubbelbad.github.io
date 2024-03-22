@@ -6,47 +6,68 @@
         <title>Victor Ivarson</title>
         <!-- ====== CSS Files ===== -->
         <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-        <link rel="stylesheet" type="text/css" href="styles/index.css">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
         <link rel="stylesheet" type="text/css" href="styles/grid-portfolio.css">
     </head>
     <body>
+        <!--- ===== Header Start ===== -->
+        <header class="portFolioHeader">
+            Header
+        </header>
+        <!-- ===== Grid-Container Start ===== -->
         <div class="grid-container">
-            <!--- ===== Header Start ===== -->
-            <header class="portFolioHeader">
-                <a href="otherPage">To forms</a>
-            </header>
-            <!--- ===== Aside Start ===== -->
+            
+            <!--- ===== Aside Left Start ===== -->
             <aside> 
-                <div><a href="index.html">Index</a></div>
-                <div><a href="portfolioPage.html">Portfolio</a></div>
-                <div><a href="otherPage.html">Other</a></div>
-                <div><a>Contact</a></div>
+                <nav>
+                    <ol class="navigation">
+                        <div class="nav-list">
+                            <div><a href="index.html">Home</a></div>
+                            <br>
+                            <div><a href="portfolioPage.html">Portfolio</a></div>
+                            <br>
+                            <div><a href="otherPage.html">Education</a></div>
+                            <br>
+                            <div><a>Contact</a></div>
+                        </div>
+                        
+                    </ol>
+                </nav>
+            </aside>
+            <!--- ===== Aide Right Start --->
+            <aside class="aside-right">
+
             </aside>
            <!--- ===== Main Container Start ===== -->
             <main>
-                <div class="grid-portfolio">
-                    <div class="box1"></div>
-                    <div class="box2"></div>
-                    <div class="box3"></div>
-                    <div class="box4"></div>
-                    <div class="box5"></div>
-                    <div class="box6"></div>
-                    <div class="box7"></div>
-                    <div class="box8"></div>
-                    <div class="box9"></div>
-                    <div class="box10"></div>
-                    <div class="box11"></div>
-                    <div class="box12"></div>
-                </div>
+                <section>
+                    <article>
+                        <h1>Mitt portfolio:</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis architecto eius maiores quisquam perspiciatis accusantium, vel consequatur voluptatem cupiditate repellendus: </p>
+                        <br>
+                        <div class="grid-portfolio">
+                            <div class="box1"></div>
+                            <div class="box2"></div>
+                            <div class="box3"></div>
+                            <div class="box4"></div>
+                            <div class="box5"></div>
+                            <div class="box6"></div>
+                            <div class="box7"></div>
+                            <div class="box8"></div>
+                            <div class="box9"></div>
+                            <div class="box10"></div>
+                            <div class="box11"></div>
+                            <div class="box12"></div>
+                        </div>
+                    </article>
+                </section>
+                
             </main>
             <!--- ===== Main Container End ===== -->
             
             <!--- ===== Footer Start  ===== -->
             <footer>
-                Footer
-                <p>Click <a href="otherPage.html">here</a> to go to the next page.</p>
-                <p> The Link: <a href="https://github.com/Bubbelbad">github</a></p>
-                <a href="https://www.linkedin.com/in/victor-ivarson-28a17524b/"><img src="images/canvas.png" width="600"/></a>
+                <img class="banner" src="images/canvas.png" /></a>
             </footer>
         </div>
     </body>
