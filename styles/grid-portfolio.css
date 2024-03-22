@@ -1,9 +1,13 @@
-.grid-container {
+.grid-portfolio {
     display: grid;
     row-gap: 15px;
     column-gap: 15px;
-    grid-template-columns: 20vw 30vw 20vw;
-    grid-template-rows: 30vw 50% 50px 10px;
+    grid-template-columns: 20vw 15vw 10vw 12vw;
+    grid-template-rows: 10vw 20vw 15vw;
+    padding-top: 200px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 20%;
 
     /* 100vw is always the wifth of the viewport  
        100% is the width of the current container */
@@ -20,8 +24,6 @@
 
 .box3 {
     background-color: chartreuse;
-    grid-column: 1 / 3; /* On column 1 and 2 */
-    grid-row: 3 / 5;
 }
 
 .box4 {
@@ -40,3 +42,22 @@
     background-color: goldenrod;
 }
 
+.box8 {
+    background-color: gold;
+}
+
+.box9 {
+    background-color: goldenrod;
+}
+
+.box10 {
+    background-color: gold;
+}
+
+.box11 {
+    background-color: goldenrod;
+}
+
+.box12 {
+    background-color: goldenrod;
+}
