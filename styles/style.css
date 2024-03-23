@@ -32,19 +32,30 @@ body {
     list-style-type: circle;
   }
 
+  a {
+    color: var(--bg-black-resin);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: var(--bg-cerulian-blue)
+  }
+
+
   /* || Header and Main Navigation */
 
 header
 {
     background-color: var(--bg-black-resin);
     width: 100%;
-    height: 120px;
+    height: 75px;
     position: fixed;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 15% 35% 35% 15%;
     grid-template-rows: auto auto;
 }
 
@@ -69,24 +80,22 @@ aside
 .nav-list {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.nav-list:hover {
-    font-style: italic;
-}
+
 
 .aside-right {
-    background-color:azure;
+    background-color:var(--text-ash-gray);
     align-items: right;
-    grid-column: 3;
+    grid-column: 4;
     grid-row: 1;
     padding-top: 120px;
 }
 
 main
 {
-    background-color: var(white);
+
     grid-column: 2;
     grid-row: 1;
-    min-height: 600px;
+    min-height: 50vw;
     padding-top: 120px;
     align-items: right;
 }
@@ -94,11 +103,14 @@ main
 footer 
 {
     background-color: var(--bg-black-resin);
-    grid-column: 1 / 4;
+    grid-column: 1 / 5;
     grid-row: 2;
     width: 100%;
     height: auto;
     align-items: center;
+    color:rgb(155, 155, 155);
+    line-height:0%;
+    list-style: circle;
 }
 
 .banner {
