@@ -24,8 +24,8 @@ body {
   h3,
   h4 {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
   }
   
   ul {
@@ -55,7 +55,7 @@ header
 
 .grid-container {
     display: grid;
-    grid-template-columns: 15% 35% 35% 15%;
+    grid-template-columns: 15% 70% 15%;
     grid-template-rows: auto auto;
 }
 
@@ -85,7 +85,7 @@ aside
 .aside-right {
     background-color:var(--text-ash-gray);
     align-items: right;
-    grid-column: 4;
+    grid-column: 3;
     grid-row: 1;
     padding-top: 120px;
 }
