@@ -1,12 +1,12 @@
 .grid-portfolio {
     display: grid;
-    row-gap: 15px;
-    column-gap: 15px;
-    grid-template-columns: 10% 40% 30% 20%;
+    row-gap: 10px;
+    column-gap: 10px;
+    grid-template-columns: 20% 40% 30% 20%;
     grid-template-rows: 40% 30% 100% 100%;
     padding-top: 10%;
-    padding-left: 10%;
-    padding-right: 30%;
+    padding-left: 5%;
+    padding-right: 5%;
     padding-bottom: 20%;
 
     /* 100vw is always the wifth of the viewport  
