@@ -49,7 +49,7 @@ body {
   }
 
 
-  /* || Header and Main Navigation */
+  /* || Header */
 
 header
 {
@@ -57,21 +57,40 @@ header
     width: 100%;
     height: 75px;
     position: fixed;
+    z-index: 1;
+}
+
+header .top-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav {
+    width: 100px;
+    float: left;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    border: 3px solid white;
+    padding: 10px;
+    margin: 10px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 15% 70% 15%;
+    grid-template-columns: 20% 70% 10%;
     grid-template-rows: auto auto;
 }
 
+/* || Aside */
+
 aside
 {
-    background-color: var(--text-green-verdigris);
+    background-color: var(--bg-cerulian-blue);
     align-items: center;
     grid-column: 1;
     grid-row: 1;
-    padding-top: 120px;
+    padding-top: 75px;
 }
 
 .navigation {
@@ -89,21 +108,30 @@ aside
 
 
 .aside-right {
-    background-color:var(--text-ash-gray);
+    background-color: white;
     align-items: right;
     grid-column: 3;
     grid-row: 1;
-    padding-top: 120px;
+    padding-top: 75px;
 }
+
+/* || Main Content */
 
 main
 {
     grid-column: 2;
     grid-row: 1;
     min-height: 50vw;
-    padding-top: 120px;
+    margin-top: 75px;
     align-items: right;
 }
+
+.grid-portfolio {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+/* || Footer */
 
 footer 
 {
@@ -118,14 +146,12 @@ footer
     list-style: circle;
 }
 
+
 .banner {
-    width: 50vw;
+    width: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    clip-path: circle(50% at 50% 50%);
 }
 
-.grid-portfolio {
-    grid-row: 1 / 2;
-    grid-column: 2 / 3;
-}
