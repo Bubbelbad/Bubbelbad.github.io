@@ -72,13 +72,14 @@ header .top-nav {
     text-align: center;
     padding-top: 20px;
     border: 3px solid white;
-    padding: 10px;
+    padding: 5px 10px;
     margin: 10px;
+    border-radius: 10px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 20% 70% 10%;
+    grid-template-columns: 15% 70% 10%;
     grid-template-rows: auto auto;
 }
 
@@ -86,11 +87,14 @@ header .top-nav {
 
 aside
 {
-    background-color: var(--bg-cerulian-blue);
     align-items: center;
     grid-column: 1;
     grid-row: 1;
     padding-top: 75px;
+}
+
+.aside-left {
+    background-image: linear-gradient( var(--bg-english-violet), var(--bg-cerulian-blue));
 }
 
 .navigation {
@@ -148,10 +152,11 @@ footer
 
 
 .banner {
-    width: 100px;
+    width: 120px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     clip-path: circle(50% at 50% 50%);
+    float: left;
 }
 
