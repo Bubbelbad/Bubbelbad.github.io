@@ -50,7 +50,41 @@
             </aside>
            <!--- ===== Main Container Start ===== -->
             <main class="portFolioMain">
-                <div>Main, Contact</div>
+                <h2>Want to reach out? </h2>
+                <form id="form">
+                    <div>
+                        <label for="fullName">Full name:</label><br>
+                        <input id="fullName" type="text"><br>
+                    </div>
+                    <div>
+                        <label for="message">Message:</label><br>
+                        <input id="message" type="text"><br>
+                    </div>
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input id="email" type="text"><br>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <script>
+                    const form = document.getElementById('form');
+                    const fullName = document.getElementById('fullName');
+                    const message = document.getElementById('message');
+
+                    form.addEventListener('submit', function(e) {
+                        e.preventDefault();
+
+                        const fullNameValue = fullName.value;
+                        const messageValue = message.value;
+                        const emailValue = email.value;
+                        
+                        localStorage.setItem('full-name', fullNameValue);
+                        localStorage.setItem('message', messageValue);
+                        localStorage.setItem('email', emailValue);
+
+
+                    });
+                </script>
             </main>
             <!--- ===== Footer Start  ===== -->
             <footer>

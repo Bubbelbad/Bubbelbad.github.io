@@ -4,11 +4,11 @@
 
 
 /* Från Niklas genomgång */
-let electricCars = new Project("ElectricCars", "This is the first project with design patterns. AVery simple program with blablabla");
+let electricCars = new Project("ElectricCars", "This is the first project with design patterns. AVery simple program that let's the user search for electric vehicles. Add and remove from database. ");
 
-let miniLibrary = new Project("ElectricCars", "This is the first project with design patterns. AVery simple program with blablabla");
+let miniLibrary = new Project("MiniLibrary", "A program for borrowing books in a library. Add and remove books from the database.");
 
-let noteTakingApp = new Project("ElectricCars", "This is the first project with design patterns. AVery simple program with blablabla");
+let noteTakingApp = new Project("NoteTakingApp", "Rroject in windows forms. Simple app that lets the user create notes. Then you can choose to save the notes to a file as json or csv. ");
 
 let projectList = [];
 

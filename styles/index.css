@@ -1,5 +1,7 @@
 /* För godkänt (G) på projektarbetet skall följande krav uppfyllas:
 
+KLART: 
+
 • Ni lämnar in en hemsida programmerad i HTML, CSS och JavaScript.
 • Ni skall ha en Header, Main, Aside, Footer som ligger i olika divs.
 • Ni använder er av en Grid-struktur för att strukturera eran hemsida.
@@ -7,6 +9,8 @@
 • Ni använder er av tag, klass och id för olika stilar.
 
 -- C H E C K P O I N T --
+
+ATT GÖRA:
 
 • Det finns klasser i JavaScript och ni skapar objekt utifrån dem som
 används till någonting.
@@ -29,14 +33,6 @@ fyra upp. Etc.
 interagerar med den raden (trycker på en knapp på den raden, etc) så
 händer någonting till det objekt associerat med den raden. Den tas
 bort ur listan, den sparas som information att skicka vidare, etc */
-
-/* ATT GÖRA: 
-
-- Skapa klasser för portfolio-projekt
-- Skapa en sender/reciever där man kan lägga in eller ta bort projekt från en sida till en annan. 
-
-- Skapa mediaQueries för att göra hemsidan mindre. (Ta bort asides eller nått liknande). 
-- 
 
 
 /* || Color Scheme */

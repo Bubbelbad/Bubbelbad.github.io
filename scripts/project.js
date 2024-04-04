@@ -3,7 +3,7 @@ class Project {
     constructor(name, description) {
         this.name = name;
         this.description = description;
-        this.
+        this.readme = readme; 
     }
 
     getName() {
