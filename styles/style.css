@@ -25,6 +25,9 @@ body {
   }
 
   p,
+  label,
+  input,
+  button,
   h1,
   h2,
   h3,
@@ -56,10 +59,11 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--bg-black-resin);
+    background-color: white;
     width: 100%;
     height: 75px;
     z-index: 1;
+    position: relative;
 }
 
 header .top-nav {
@@ -67,19 +71,24 @@ header .top-nav {
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
+    position: fixed;
     justify-content: space-between;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
 }
 
 #nav {
-    width: 100px;
+    width: 130px;
     float: left;
-    color: white;
+    color: black;
     text-align: center;
     padding-top: 20px;
-    border: 3px solid white;
+    border: 3px solid var(--text-ash-gray);
+    background-color: white;
     padding: 5px 10px;
     margin: 10px;
     border-radius: 10px;
+    text-transform: uppercase;
 }
 
 .grid-container {
@@ -99,7 +108,7 @@ aside
 }
 
 .aside-left {
-    background-image: linear-gradient( var(--bg-english-violet), var(--bg-cerulian-blue));
+    background-image: linear-gradient( white, var(--bg-cerulian-blue));
 }
 
 .navigation {

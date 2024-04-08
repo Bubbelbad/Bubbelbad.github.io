@@ -4,6 +4,7 @@ class Project {
         this.name = name;
         this.description = description;
         this.readme = readme; 
+        this.gitHubLink = gitHubLink;
     }
 
     getName() {
@@ -12,6 +13,10 @@ class Project {
 
     getDescription() {
         return this.description;
+    }
+
+    getGitHubLink() {
+        return this.gitHubLink;
     }
 
     setName(name) {

@@ -53,19 +53,24 @@
             <main>
                 <h1 class="header1">Want to reach out? </h1>
                 <form id="form">
-                    <div>
-                        <label for="fullName">Full name:</label><br>
-                        <input id="fullName" type="text"><br>
+                    <div class="container">
+                        <div>
+                            <label for="fullName">Full name:</label><br>
+                            <input class="formInput" id="fullName" type="text"><br>
+                        </div>
+                        <br>
+                        <div>
+                            <label  for="message">Message:</label><br>
+                            <input class="formInput" id="message" type="text"><br>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="email">Email:</label><br>
+                            <input id="email" type="text" class="formInput"><br>
+                        </div>
+                        <br>
+                        <button type="submit">Submit</button>
                     </div>
-                    <div>
-                        <label for="message">Message:</label><br>
-                        <input id="message" type="text"><br>
-                    </div>
-                    <div>
-                        <label for="email">Email:</label><br>
-                        <input id="email" type="text"><br>
-                    </div>
-                    <button type="submit">Submit</button>
                 </form>
                 <script>
                     const form = document.getElementById('form');
@@ -82,8 +87,6 @@
                         localStorage.setItem('full-name', fullNameValue);
                         localStorage.setItem('message', messageValue);
                         localStorage.setItem('email', emailValue);
-
-
                     });
                 </script>
             </main>

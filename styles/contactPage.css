@@ -4,5 +4,30 @@
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 16px;
-    margin-left: 10%;
+    font-weight: bold;
+}
+
+#message {
+    height: 250px;
+}
+
+.container {
+    border: 2px;
+    border-color: black;
+    background-image: linear-gradient(var(--bg-cerulian-blue), white);
+    border-radius: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 320px; 
+    margin: 0 auto;
+}
+
+
+.formInput {
+    width: 250px;
+}
+
+
+.messageText {
+    height: 200px;
 }
