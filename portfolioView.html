@@ -12,7 +12,16 @@
     <body>
         <!--- ===== Header Start ===== -->
         <header>
-            <div><a href="index.html"><i class="fa fa-home"></i>Home</a></div>
+            <div class="top-nav">
+                <div><a id="nav" href="index.html"><i class="fa fa-home"></i>Home</a>
+                </div>
+                <div><a id="nav" href="portfolioPage.html"><i class="fa fa-briefcase"></i>Portfolio</a>
+                </div>
+                <div><a id="nav" href="educationPage.html"><i class="fa fa-list"></i>Education</a>
+                </div>
+                <div><a id="nav" href="contactPage.html"><i class="fa fa-comments"></i>Contact</a>
+                </div>
+            </div>
         </header>
         <!-- ====== Grid-Container Start ===== -->
         <div class="grid-container">
@@ -43,11 +52,10 @@
                     <article>
                         <div id="banner">
                         <h2 id="project-name">ExempelProjekt</h2>
-                            <p class="impact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, error molestias omnis adipisci quod reiciendis, fuga, quisquam deleniti recusandae dolorem suscipit tempora illum mollitia? Quidem rerum assumenda asperiores dolores explicabo? </p>
+                            <p class="impact-text" id="project-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, error molestias omnis adipisci quod reiciendis, fuga, quisquam deleniti recusandae dolorem suscipit tempora illum mollitia? Quidem rerum assumenda asperiores dolores explicabo? </p>
                         </div>
                         <div id="project-div">
                             <h3>Exempelprojekt: </h3>
-                            <p>En till rad görs med en till paragraf-tagg.</p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus esse nulla, incidunt consequatur quisquam quis vero? Sunt modi sint rem, mollitia quaerat porro earum quae, nisi, placeat cupiditate enim ea!</p>
                             <div id="project-list-div">
                               <ul>
@@ -58,16 +66,13 @@
                               </ul>
                     </article>
                 </section>
-                <script>
-                    const projectName = document.getElementById("project-name");
-                    const projectDescription = document.getElementById("project-description");
-                </script>
             </main>
             <!--- ===== Footer Start  ===== -->
             <footer>
                 <img class="banner" src="images/canvas.png"/></a>
             </footer>
         </div> 
+        <script src="scripts/project.js"></script>
         <script src="scripts/portfolioView.js"></script>
     </body>
 </html>

@@ -14,3 +14,4 @@ form.addEventListener('submit', function(e) {
     localStorage.setItem('full-name', fullNameValue);
     localStorage.setItem('message', messageValue);
     localStorage.setItem('email', emailValue);
+}

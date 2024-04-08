@@ -61,7 +61,7 @@ header
     align-items: center;
     background-color: white;
     width: 100%;
-    height: 75px;
+    height: 50px;
     z-index: 1;
     position: relative;
 }
@@ -104,7 +104,7 @@ aside
     align-items: center;
     grid-column: 1;
     grid-row: 1;
-    padding-top: 75px;
+    padding-top: 50px;
 }
 
 .aside-left {
@@ -130,7 +130,7 @@ aside
     align-items: right;
     grid-column: 3;
     grid-row: 1;
-    padding-top: 75px;
+    padding-top: 50px;
 }
 
 /* || Main Content */
@@ -140,7 +140,7 @@ main
     grid-column: 2;
     grid-row: 1;
     min-height: 50vw;
-    margin-top: 75px;
+    margin-top: 50px;
     align-items: right;
 }
 
