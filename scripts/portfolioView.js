@@ -1,14 +1,12 @@
 /* RECIEVER */
 
-/* This class will take the name of the project from portFolioPage and then display the coresponding information on the portFolioView.html from these objects */
+/* This class will take the name of the project name from localStorage/portFolioPage and then display the coresponding information on the portFolioView.html from these objects */
 
-/* List for the projects */
 let projectList = [];
 let projectName1 = document.getElementById("project-name");
 let projectDescription1 = document.getElementById("project-description");
 
 
-/* The classes */
 let electricCars = new Project("ElectricCars", "The purpose of this application was to create an app with 5 design patterns and two sorting algorithms. I chose to make a fictive database that contains data for electric vehicles. <br/> The program displays a list of car proxies and the user is able to sort the proxies by brand or price, using two sorting algorithms.");
 
 let miniLibrary = new Project("MiniLibrary", "This is a small version of a library. The goal of this project is to practice MySQL and database connection to the C# application. Also to give different privileges and growing my understanding on views, procedures etc.");

@@ -2,6 +2,7 @@
 
 KLART: 
 
+G:
 • Ni lämnar in en hemsida programmerad i HTML, CSS och JavaScript.
 • Ni skall ha en Header, Main, Aside, Footer som ligger i olika divs.
 • Ni använder er av en Grid-struktur för att strukturera eran hemsida.
@@ -14,19 +15,21 @@ används till någonting.
 sessionStorage, localStorage, cookies) skickar ni information från en
 sida till en annan och sedan använder den.
 
+
+VG: 
+• Ni använder er av Media Queries för att göra sidan mer passande för
+en mindre skärm när tillgängliga bredden krymper. Eller tvärt om, att ni
+använder Media Queries för att justera för en bredare skärm om ni kör
+mobile-first.
+
 -- C H E C K P O I N T --
 
 ATT GÖRA:
 
 För väl godkänt (VG) på projektarbetet skall dessutom följande krav uppfyllas:
 
-• Ni använder er av Media Queries för att göra sidan mer passande för
-en mindre skärm när tillgängliga bredden krymper. Eller tvärt om, att ni
-använder Media Queries för att justera för en bredare skärm om ni kör
-mobile-first.
 • Ni har objekt som läggs in dynamiskt så att de blir synliga på hemsidan
-utifrån en lista i JavaScript. Finns två visas de två upp. Finns fyra visas
-fyra upp. Etc.
+utifrån en lista i JavaScript. Finns två visas de två upp. Finns fyra visas fyra upp. Etc.
 • Varje dynamiskt skapad rad har implementation som gör att om man
 interagerar med den raden (trycker på en knapp på den raden, etc) så
 händer någonting till det objekt associerat med den raden. Den tas

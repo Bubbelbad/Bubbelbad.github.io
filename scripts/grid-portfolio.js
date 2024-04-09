@@ -1,5 +1,6 @@
-const grid = document.getElementById('grid-portfolio');
+/* This is not yet implemented, but it will be used to add interactivity when the mouse enters the buttons/texts */
 
+const grid = document.getElementById('grid-portfolio');
 
 grid.addEventListener('mouseenter', 
     function(event) {

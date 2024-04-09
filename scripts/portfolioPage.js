@@ -1,6 +1,6 @@
-
 /* SENDER */
-/* This class will send the chosen project name to the view from portfolioPage */
+
+/* This class will send the chosen project name to portfolioPage through localStorage */
 
 const electricCarsButton = document.getElementById("electricCarsButton");
 const miniLibraryButton = document.getElementById("miniLibraryButton");
@@ -47,20 +47,3 @@ function(event) {
     localStorage.setItem("project", "TheFarm");
     window.location.href = "portfolioView.html";
 });
-
-
-/* Något anat */
-const projectInput = document.getElementById("projectName");
-const projectDescription = document.getElementById("projectDescription");
-
-/*
-sendProjectButton.addEventListener('click', 
-    function(event) {
-        let project = new Project(projectName.value, projectDescription.value);
-
-        let json = JSON.stringify(project);
-
-        sessionStorage.setItem("project", json);
-
-        window.location = "portfolioView.html";
-} */

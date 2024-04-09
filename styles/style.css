@@ -126,9 +126,9 @@ aside
 
 
 .aside-right {
-    background-color: white;
+    background-image: linear-gradient( white, var(--bg-cerulian-blue));
     align-items: right;
-    grid-column: 3;
+    grid-column: 3 / 5;
     grid-row: 1;
     padding-top: 50px;
 }

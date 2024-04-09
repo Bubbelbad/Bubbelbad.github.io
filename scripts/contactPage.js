@@ -1,4 +1,4 @@
-
+/* Planning to implement a mail-service here so people can send me messages directly from the website. */
 
 const form = document.getElementById('form');
 const fullName = document.getElementById('fullName');
