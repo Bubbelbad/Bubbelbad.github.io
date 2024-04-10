@@ -1,5 +1,6 @@
 
 let bubbleList = [];
+let floatingList = [];
 
 let cSharp = new Bubble("C#", "Programming language in .NET", "images/cSharp.svg");
 let mySql = new Bubble("MySQL", "Programming language in .NET", "images/mysql.svg");
@@ -23,9 +24,11 @@ const toolsDiv = document.getElementById("toolsDiv");
 /* Event listener for bubble button: */
 bubbleButton.addEventListener('click',
 function(event) {
+    floatingList.push(bubbleList[counter]);
     let htmlString = "<img class=\"stack-icon\" src=\"" + bubbleList[counter].getImage() + "\" />";
     toolsDiv.innerHTML += htmlString;
     let closeButton = document.createElement("button");
+    closeButton.class = bubbleList[counter].getName();
     closeButton.textContent = "X";
     toolsDiv.appendChild(closeButton);
     counter++;
@@ -33,3 +36,7 @@ function(event) {
         counter = 0;
     }
 });
+
+/*closeButton.addEventListener('click',
+function(event) {*/
+

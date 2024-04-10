@@ -66,7 +66,6 @@ header
 }
 
 header .top-nav {
-    margin-top: 10px; 
     margin-left: 20%;
     margin-right: 20%;
     display: flex;
@@ -160,7 +159,7 @@ main
 
 footer 
 {
-    background-color: var(--bg-black-resin);
+    background-image: linear-gradient( VAR(--bg-english-violet), var(--bg-black-resin));
     grid-column: 1 / 5;
     grid-row: 2;
     width: 100%;
@@ -169,15 +168,20 @@ footer
     color:rgb(155, 155, 155);
     line-height:0%;
     list-style: circle;
+    float: left; 
 }
 
 
 .banner {
-    width: 120px;
-    display: block;
+    position: relative;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
     clip-path: circle(50% at 50% 50%);
-    float: left;
+    float: left; 
+    margin-top: 25px; 
+    margin-right: 50px;
+    margin-left: 20vw; 
+    margin-bottom: 25px;;
 }
 

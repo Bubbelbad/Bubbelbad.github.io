@@ -10,7 +10,7 @@
 
 
 body {
-    background-image: white;
+    background-image: linear-gradient( white, var(--text-ash-gray));
     size: 100%;
     grid-column: auto;
     grid-row: auto;

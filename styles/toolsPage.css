@@ -1,5 +1,30 @@
 
+:root 
+{
+    --bg-black-resin: #202030;
+    --bg-english-violet: #39304A;
+    --bg-cerulian-blue: #40798C;
+    --text-green-verdigris: #70A9A1;
+    --text-ash-gray: #CFD7C7;
+}
+
+section {
+    height: 100vh;
+}
+
 .stack-icon {
     width: 70px; 
     height: 70px;
+    opacity: 1;
+    border: solid; 
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: var(--bg-cerulian-blue); 
+    background-image: linear-gradient(white, var(--text-green-verdigris));
+    padding: 15px;
+    box-shadow: 4px 4px 4px var(--text-ash-gray);
+}
+
+button {
+    background-color: var(--text-ash-gray); 
 }
