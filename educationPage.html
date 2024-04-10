@@ -7,6 +7,7 @@
         <!-- ====== CSS Files ===== -->
         <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/style.css">
+        <link rel="stylesheet" type="text/css" href="styles/toolsPage.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="styles/mediaQueries.css">
     </head>
@@ -30,20 +31,7 @@
         <div class="grid-container">
             <!--- ===== Aside Left Start ===== -->
             <aside class="aside-left"> 
-                <nav>
-                    <ol class="navigation">
-                        <div class="nav-list">
-                            <div><a href="index.html"><i class="fa fa-home"></i>Home</a></div>
-                            <br>
-                            <div><a href="portfolioPage.html"><i class="fa fa-briefcase"></i>Portfolio</a></div>
-                            <br>
-                            <div><a href="educationPage.html"><i class="fa fa-list"></i>Education</a></div>
-                            <br>
-                            <div><a href="contactPage.html"><i class="fa fa-comments"></i>Contact</a></div>
-                        </div>
-                        
-                    </ol>
-                </nav>
+                <button id="bubbleButton">Bubble</button>
             </aside>
             <!--- ===== Aide Right Start --->
             <aside class="aside-right">
@@ -55,6 +43,8 @@
                     <article>
                         <div id="banner">
                         <h1 class="header1">Tools</h1>
+                        <div id="toolsDiv">
+                        </div>
                         </div>
                     </article>
                 </section>
@@ -63,6 +53,8 @@
             <footer>
                 <img class="banner" src="images/canvas.png"/></a>
             </footer>
+            <script src="scripts/bubble.js"></script>
+            <script src="scripts/toolsPage.js"></script>
         </div> 
     </body>
 </html>

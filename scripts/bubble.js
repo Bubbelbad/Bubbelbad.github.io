@@ -1,9 +1,9 @@
-class Project {
+class Bubble {
 
-    constructor(name, description) {
+    constructor(name, description, image) {
         this.name = name;
         this.description = description;
-        this.tagList = [];
+        this.image = image;
     }
 
     getName() {
@@ -14,6 +14,10 @@ class Project {
         return this.description;
     }
 
+    getImage() {
+        return this.image;
+    }
+
     setName(name) {
         this.name = name;
     }
@@ -22,7 +26,7 @@ class Project {
         this.description = description;
     }
 
-    static fromJson(json) {
-        return new Project(json.name, json.description);
+    setImage(image) {
+        this.image = image;
     }
 }
