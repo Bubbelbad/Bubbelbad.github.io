@@ -47,6 +47,11 @@ bort ur listan, den sparas som information att skicka vidare, etc */
 }
 
 
+section {
+    height: 100vh;
+}
+
+
 /* || Banner */
 body {
     background-image: linear-gradient( black, var(--bg-cerulian-blue));
@@ -56,6 +61,16 @@ body {
     grid-column: auto;
     grid-row: auto;
 }
+
+.honk-text {
+    font-family: "Honk", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "MORF" 15,
+      "SHLN" 50;
+  }
 
 #banner
 {
@@ -67,7 +82,7 @@ body {
     z-index: -1;
     font-size: 3rem;
     line-height: 1;
-    color: var(--text-ash-gray);
+    color: var(--text-ash-gray);;
 }
   
 .impact-text

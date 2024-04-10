@@ -12,6 +12,12 @@ section {
     height: 100vh;
 }
 
+.header1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .stack-icon {
     width: 70px; 
     height: 70px;
@@ -28,3 +34,4 @@ section {
 button {
     background-color: var(--text-ash-gray); 
 }
+

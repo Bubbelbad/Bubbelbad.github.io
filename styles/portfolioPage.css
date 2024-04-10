@@ -15,3 +15,9 @@ body {
     grid-column: auto;
     grid-row: auto;
 }
+
+.header1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
