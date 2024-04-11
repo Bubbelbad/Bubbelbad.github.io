@@ -21,14 +21,10 @@ section {
 .stack-icon {
     width: 70px; 
     height: 70px;
-    opacity: 1;
-    border: solid; 
-    border-radius: 50%;
-    border-width: 2px;
-    border-color: var(--bg-cerulian-blue); 
-    background-image: linear-gradient(white, var(--text-green-verdigris));
-    padding: 15px;
-    box-shadow: 4px 4px 4px var(--text-ash-gray);
+    margin-left: 10px; 
+    margin-top: 30px; 
+    position: relative; 
+    transition: top 3s, left 3s;
 }
 
 button {
