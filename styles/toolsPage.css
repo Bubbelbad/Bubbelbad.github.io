@@ -25,6 +25,7 @@ section {
     margin-top: 30px; 
     position: relative; 
     transition: top 3s, left 3s;
+    margin-right: 10px; 
 }
 
 button {

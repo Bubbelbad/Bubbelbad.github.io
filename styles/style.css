@@ -64,6 +64,8 @@ header
     height: 50px;
     z-index: 1;
     position: relative;
+    grid-column: 1 / 4;
+    grid-row: 1;
 }
 
 header .top-nav {
@@ -139,7 +141,6 @@ main
     grid-column: 2;
     grid-row: 1;
     min-height: 50vw;
-    margin-top: 50px;
     align-items: right;
 }
 

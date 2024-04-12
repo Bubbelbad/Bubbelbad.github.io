@@ -2,10 +2,8 @@
 //All stack objects
 let bubbleList = [];
 
-//The visible floating items
-let floatingList = [];
 
-//Adding the clases to the bubbleList
+//Adding bubble-objects to bubbleList
 let cSharp = new Bubble("C#", "Programming language in .NET", "images/cSharp.svg");
 let mySql = new Bubble("MySQL", "Programming language in .NET", "images/mysql.svg");
 let javaScript = new Bubble("JavaScript", "Programming language in .NET", "images/javascript.svg");
@@ -27,36 +25,35 @@ const toolsDiv = document.getElementById("toolsDiv");
 
 
 /* Event listener for bubble button: */
-bubbleButton.addEventListener('click',
-function(event) {
-    floatingList.push(bubbleList[counter]);
-    counter++;
-    if (counter == bubbleList.length) {
-        counter = 0;
-    }
-    displayFloatingList();
-    if (!moveInterval) { // start the interval only if it's not already started
-        moveInterval = setInterval(bubbleMove, 2000); // 5000 milliseconds = 5 seconds
+bubbleButton.addEventListener('click', function(event) {
+    for (let i = 0; i < bubbleList.length; i++) {
+        let exists = false;
+        for (let j = 0; j < toolsDiv.children.length; j++) {
+            if (toolsDiv.children[j].name == i) {
+                exists = true;
+                break;
+            }
+        }
+        if (!exists) {
+            toolsDiv.innerHTML += `<input name="${i}" type="image" class="stack-icon" onclick="deleteBubble(${i})" src="${bubbleList[i].getImage()}" id="${i}" />`;
+            return;
+        }
     }
 });
 
-displayFloatingList = function() {
-        toolsDiv.innerHTML = "";
-    for (let i = 0; i < floatingList.length; i++) {
-        let htmlString = "<input type=\"image\" class=\"stack-icon\" onclick=\"deleteBubble(" + i + ")\" src=\"" + floatingList[i].getImage() + "\" id=\"" + i + "\""+  "/>";
-        toolsDiv.innerHTML += htmlString;
+
+deleteBubble = function(int) {
+    //floatingList.splice(int, 1);
+    for (let i = 0; i < toolsDiv.children.length; i++) {
+        if (toolsDiv.children[i].name == int) {
+            toolsDiv.children[i].remove();
+        }
     }
 }
 
-/* Event listener for close button: */
-deleteBubble = function(int) {
-    floatingList.splice(int, 1);
-    displayFloatingList();
-}
 
 
-
-
+/*
 let moveInterval;
 
 //Function to move the bubbles within the section
@@ -74,7 +71,6 @@ function bubbleMove() {
    
 
     // Apply the new position to the bubble
-    
     let movingList = document.getElementsByClassName("stack-icon");
     for (let i = 0; i < movingList.length; i++) {
         const newLeft = Math.floor(Math.random() * maxLeft);
@@ -92,6 +88,5 @@ function bubbleMove() {
 });
 
 }
-
-
+*/
 

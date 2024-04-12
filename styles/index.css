@@ -47,8 +47,8 @@ bort ur listan, den sparas som information att skicka vidare, etc */
 }
 
 
-section {
-    height: 100vh;
+main {
+    height: 80vh; 
 }
 
 
@@ -57,9 +57,11 @@ body {
     background-image: linear-gradient( black, var(--bg-cerulian-blue));
     size: 100%;
     height: 100vh;
+    overflow: hidden; 
     background-repeat: no-repeat;
     grid-column: auto;
     grid-row: auto;
+    
 }
 
 .honk-text {
