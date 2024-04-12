@@ -1,12 +1,8 @@
-#form {
+#contactForm {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 16px;
     font-weight: bold;
-}
-
-#message {
-    height: 250px;
 }
 
 section {
@@ -35,7 +31,7 @@ section {
     margin-right: auto; 
 }
 
-.container {
+.form-container {
     border: 2px;
     border-color: black;
     background-image: linear-gradient(var(--text-ash-gray), white);
@@ -46,13 +42,42 @@ section {
     margin: 0 auto;
 }
 
-
-.formInput {
+#contact-name,
+#contact-email,
+#contact-message {
     width: 30vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 
-.messageText {
-    height: 300px;
+
+/*
+
+.form {
+    border: 2px;
+    border-color: black;
+    background-image: linear-gradient(var(--text-ash-gray), white);
+    border-radius: 5%;
+    padding: 15px;
+    width: 40vw; 
+    margin: 0 auto;
 }
 
+.form-container {
+    display: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 16px;
+    font-weight: bold;
+}
+*/

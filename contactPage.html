@@ -44,24 +44,25 @@
                 <h1 class="header1">Got some problems to solve? </h1>
 
                 <br>
-                <form id="form">
-                    <div class="container">
+                <form id="contactForm" class="form">
+                    <div class="form-container">
                         <div>
-                            <label for="fullName">Full name:</label><br>
-                            <input class="formInput" id="fullName" type="text"><br>
+                            <input id="contact-name" type="text" placeholder=" " required=""><br>
+                            <label for="contact-name">First- and last name</label>
                         </div>
                         <br>
                         <div>
-                            <label  for="message">Message:</label><br>
-                            <input class="formInput" id="message" type="text"><br>
+                            <input id="contact-email" type="text" placeholder=" " required=""><br>
+                            <label for="contact-email">Email</label><br>
                         </div>
                         <br>
                         <div>
-                            <label for="email">Email:</label><br>
-                            <input id="email" type="text" class="formInput"><br>
+                            <textarea id="contact-message" rows="10" type="text" placeholder=" " required=""></textarea> 
+                            <br>
+                            <label  for="contact-message">Message</label><br>
                         </div>
                         <br>
-                        <button type="submit">Submit</button>
+                        <button id="contact-submit" type="submit">Submit</button>
                     </div>
                 </form>
                 <div class="brand-links"><a href="https://www.linkedin.com/in/victor-ivarson-28a17524b/"><i class="fa-brands fa-linkedin"></i></a>
