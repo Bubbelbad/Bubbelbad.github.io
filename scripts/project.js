@@ -1,11 +1,12 @@
 class Project {
 
-    constructor(name, month, description, tagList, projectLink) {
+    constructor(name, month, description, tagList, projectLink, imageList) {
         this.name = name;
         this.month = month;
         this.description = description;
         this.tagList = tagList;
         this.projectLink = projectLink;
+        this.imageList = imageList; 
     }
 
     getName() {
@@ -32,6 +33,24 @@ class Project {
 
     getProjectLink() {
         return this.projectLink;
+    }
+
+    getLilNavImages() {
+        let string = "";
+        for (let i = 0; i < this.imageList.length; i++) {
+            string += `<a href="#image-${i}"><img src="${this.imageList[i]}" class="lil-nav-image" /></a>`;
+        }
+        return string;
+    }
+
+    getGalleryImages() {
+        let string = "";
+        for (let i = 0; i < this.imageList.length; i++) {
+            if (i == this.imageList.length - 1) {
+                return string += `<img src="${this.imageList[i]}" class="gallery-image" id="image-${i}" />`;
+            }
+            else string += `<img src="${this.imageList[i]}" class="gallery-image" id="image-${i}" />`;
+        }
     }
 
     setName(name) {

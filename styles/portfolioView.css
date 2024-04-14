@@ -71,3 +71,74 @@ p {
     padding-right: 10px;
     padding-top: 2px;
 }
+
+
+/* IMAGE -CAUROSEL */
+
+
+.wrapper {
+    display: flex; 
+    box-sizing: border-box;
+    height: 80vh;
+    width: auto; 
+    display: grid; 
+    grid-template-rows: 1fr, 5fr;
+    grid-gap: 10px; 
+    margin-top: 150px;
+    margin-left: 10vw; 
+    margin-right: 10vw;
+}
+
+#gallery {
+    grid-row: 1;
+    overflow: hidden; 
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    grid-gap: 10px; 
+    object-fit:contain;
+}
+
+@media screen and (min-width: 800px) { /* replace 800px with the value you want */
+    #gallery {
+        grid-template-rows: 1fr 5fr;
+        grid-template-columns: auto; 
+    }
+}
+
+#lil-nav::-webkit-scrollbar {
+    display: none;
+}
+
+#lil-nav {
+    grid-row: 2;
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    height: 200px; 
+    object-fit: cover; 
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#lil-nav a {
+    width: 250px;
+    display: inline-flex; 
+    margin: 10px; 
+    flex-direction: column;
+}
+
+.gallery-image {
+    scroll-snap-align: start; 
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.lil-nav-image {
+    object-fit: cover; 
+    filter: saturate(0);
+    transition: 0.3s ease all;
+}
+
+.lil-nav-image:hover {
+    transform: scale(1.05);
+    filter: saturate(1);
+}
