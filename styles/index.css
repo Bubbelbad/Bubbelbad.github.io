@@ -1,40 +1,3 @@
-/* För godkänt (G) på projektarbetet skall följande krav uppfyllas:
-
-KLART: 
-
-G:
-• Ni lämnar in en hemsida programmerad i HTML, CSS och JavaScript.
-• Ni skall ha en Header, Main, Aside, Footer som ligger i olika divs.
-• Ni använder er av en Grid-struktur för att strukturera eran hemsida.
-• I CSS använder ni er av Margin, Padding och Border.
-• Ni använder er av tag, klass och id för olika stilar.
-• Det finns klasser i JavaScript och ni skapar objekt utifrån dem som
-används till någonting.
-• Ni använder er av addEventListener för att lägga till funktionalitet.
-• Via av någon av de många olika sätten (url search params,
-sessionStorage, localStorage, cookies) skickar ni information från en
-sida till en annan och sedan använder den.
-
-
-VG: 
-• Ni använder er av Media Queries för att göra sidan mer passande för
-en mindre skärm när tillgängliga bredden krymper. Eller tvärt om, att ni
-använder Media Queries för att justera för en bredare skärm om ni kör
-mobile-first.
-
--- C H E C K P O I N T --
-
-ATT GÖRA:
-
-För väl godkänt (VG) på projektarbetet skall dessutom följande krav uppfyllas:
-
-• Ni har objekt som läggs in dynamiskt så att de blir synliga på hemsidan
-utifrån en lista i JavaScript. Finns två visas de två upp. Finns fyra visas fyra upp. Etc.
-• Varje dynamiskt skapad rad har implementation som gör att om man
-interagerar med den raden (trycker på en knapp på den raden, etc) så
-händer någonting till det objekt associerat med den raden. Den tas
-bort ur listan, den sparas som information att skicka vidare, etc */
-
 /* || Color Scheme */
 
 :root 
@@ -50,6 +13,7 @@ bort ur listan, den sparas som information att skicka vidare, etc */
 main {
     height: 80vh; 
 }
+
 
 
 /* || Banner */

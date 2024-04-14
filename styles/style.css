@@ -10,13 +10,6 @@
 }
 
 /* || GENERAL STYLES */
-@font-face {
-    /* 
-    font-family: ;
-    src: ;
-   */
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -54,7 +47,6 @@ body {
 
 
   /* || Header */
-
 header
 {
     display: flex;
@@ -99,7 +91,6 @@ header .top-nav {
 }
 
 /* || Aside */
-
 aside
 {
     align-items: center;
@@ -135,7 +126,6 @@ aside
 }
 
 /* || Main Content */
-
 main
 {
     grid-column: 2;
@@ -158,7 +148,6 @@ main
 }
 
 /* || Footer */
-
 footer 
 {
     background-image: linear-gradient( VAR(--bg-english-violet), var(--bg-black-resin));
@@ -172,7 +161,6 @@ footer
     list-style: circle;
     float: left; 
 }
-
 
 .banner {
     position: relative;
