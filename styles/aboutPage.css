@@ -10,10 +10,9 @@ section {
     font-style: normal;
 }
 
-.inconsolata-<uniquifier> {
+.inconsolata-uniquifier> {
     font-family: "Inconsolata", monospace;
-    
-  }
+}
 
 #banner p {
     font-family: "Inconsolata", monospace;

@@ -38,6 +38,13 @@ body {
       "SHLN" 50;
   }
 
+  .text{
+    font-family: permanent marker;
+    font-style: italic;
+    color: var(--text-ash-gray);
+    text-shadow: 2px 2px 4px #000000;
+  }
+
 #banner
 {
     margin-top: 10%;
